@@ -1,0 +1,16 @@
+body {
+	align-items: center;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.menu {
+	background-color: white;
+	fill: white;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+}

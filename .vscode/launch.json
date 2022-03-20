@@ -18,6 +18,13 @@
 			"runtimeExecutable": "/usr/bin/brave",
 			"webRoot": "${workspaceFolder}",
 			"file": "/home/kevin/Documenti/html/index.html"
+		},
+		{
+			"name": "Launch Chrome",
+			"request": "launch",
+			"type": "pwa-chrome",
+			"file": "${workspaceFolder}/index.html",
+			"webRoot": "${workspaceFolder}"
 		}
 	]
 }

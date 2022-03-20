@@ -1,8 +1,37 @@
 body {
-	align-items: center;
-	text-align: center;
-	background-color: black;
 	color: white;
+	background: #202731;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	padding: 100px 20vw;
+}
+
+.color-1 {
+	background: #B3C7C3;
+}
+
+.color-2 {
+	background: #7B918D;
+}
+
+.color-3 {
+	background: #6E7A78;
+}
+
+.color-4 {
+	background: #C1DED9;
+}
+
+.color-5 {
+	background: #404746;
 }
 
 .menu {

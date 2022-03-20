@@ -1,10 +1,31 @@
 body {
+	background-color: #bbbfbc;
 	text-align: center;
 	align-items: center;
 	font-family: 'Roboto', sans-serif;
 	/* background-image: linear-gradient(to left, white, white 50%, black, black50%); */
 	/* background-color: #181a1b; */
 	/* color: antiquewhite; */
+}
+
+.kubuntu {
+	width: 64px;
+	height: 64px;
+	margin: 0px 25px;
+}
+
+.header {
+	height: 100px;
+	background-color: #343536;
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sugiù {
+	color: white;
 }
 
 .invisible-link {
@@ -22,7 +43,15 @@ body {
 
 .cards-container {
 	display: flex;
-	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-div {
+	width: 480px;
+	height: 500px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 .card {
@@ -33,8 +62,6 @@ body {
 	justify-items: center;
 	background-clip: border-box;
 	transform: scale(100%);
-	margin-left: 150px;
-	margin-right: 150px;
 	transition: 300ms;
 }
 
@@ -44,13 +71,31 @@ body {
 	transform: scale(110%);
 }
 
-#card-txtBody {
+.card-body-cyber {
+	width: 480px;
+	text-align: left;
+	background-color: lightblue;
+}
+
+.card-body-linux {
+	width: 480px;
+	text-align: left;
+	background-color: rgb(237, 253, 89);
+}
+
+#card-title {
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+#card-txtBody {	
 	font-size: 20px;
+	margin-left: 10px;
 }
 
 .img {
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 110%;
 }
 
 #cybersecImg {
@@ -64,4 +109,13 @@ body {
 
 #card-text {
 	text-align: left;
+}
+
+.footer {
+	height: 100px;
+	font-size: 30px;
+	background-color: #343536;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

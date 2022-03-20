@@ -12,6 +12,14 @@
 			"file": "${workspaceFolder}/index.html"
 		},
 		{
+			"type": "firefox",
+			"request": "launch",
+			"firefoxExecutable": "libreworlf",
+			"reAttach": true,
+			"name": "Firefox",
+			"file": "${workspaceFolder}/index.html"
+		},
+		{
 			"type": "chrome",
 			"request": "launch",
 			"name": "Brave",

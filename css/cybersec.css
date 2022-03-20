@@ -2,7 +2,27 @@ body {
 	color: white;
 	background: #202731;
 	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
 	margin: 0;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+@keyframes to90perc {
+	0% {
+		transform: scale(100%);
+	}
+
+	30% {
+		transform: scale(100%);
+	}
+
+	100% {
+		transform: scale(90%);
+	}
 }
 
 section {
@@ -11,27 +31,35 @@ section {
 	flex-direction: column;
 	align-items: center;
 	min-height: 400px;
-	padding: 100px 20vw;
+	padding: 30px 20vw;
+	transform: scale(90%);
+	transition: 500ms;
+	animation: 1s ease-out 0s 1 to90perc;
+}
+
+section:hover {
+	transition: 500ms;
+	transform: scale(95%);
 }
 
 .color-1 {
-	background: #B3C7C3;
+	background: #07B3B3;
 }
 
 .color-2 {
-	background: #7B918D;
+	background: #216161;
 }
 
 .color-3 {
-	background: #6E7A78;
+	background: #034747;
 }
 
 .color-4 {
-	background: #C1DED9;
+	background: #329494;
 }
 
 .color-5 {
-	background: #404746;
+	background: #09E0E0;
 }
 
 .menu {

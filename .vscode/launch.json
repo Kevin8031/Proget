@@ -17,7 +17,7 @@
 			"name": "Brave",
 			"runtimeExecutable": "/usr/bin/brave",
 			"webRoot": "${workspaceFolder}",
-			"file": "/home/kevin/Documenti/html/index.html"
+			"file": "${workspaceFolder}/index.html"
 		},
 		{
 			"name": "Launch Chrome",

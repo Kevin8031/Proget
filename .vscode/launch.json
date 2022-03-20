@@ -7,32 +7,10 @@
 		{
 			"type": "firefox",
 			"request": "launch",
+			"firefoxExecutable": "/usr/bin/libreworlf",
 			"reAttach": true,
-			"name": "Firefox",
+			"name": "Librewolf",
 			"file": "${workspaceFolder}/index.html"
-		},
-		{
-			"type": "firefox",
-			"request": "launch",
-			"firefoxExecutable": "libreworlf",
-			"reAttach": true,
-			"name": "Firefox",
-			"file": "${workspaceFolder}/index.html"
-		},
-		{
-			"type": "chrome",
-			"request": "launch",
-			"name": "Brave",
-			"runtimeExecutable": "/usr/bin/brave",
-			"webRoot": "${workspaceFolder}",
-			"file": "${workspaceFolder}/index.html"
-		},
-		{
-			"name": "Launch Chrome",
-			"request": "launch",
-			"type": "pwa-chrome",
-			"file": "${workspaceFolder}/index.html",
-			"webRoot": "${workspaceFolder}"
 		}
 	]
 }

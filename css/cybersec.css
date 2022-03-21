@@ -1,45 +1,10 @@
 body {
 	color: white;
-	background: #202731;
+	background-image: url(https://constructionexec.com/assets/site_18/images/article/102120123537.jpg?width=1280);
+	background-size: 100%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	margin: 0;
-}
-
-h1 {
-	font-weight: bold;
-	font-size: 50px;
-}
-
-@keyframes to90perc {
-	0% {
-		transform: scale(100%);
-	}
-
-	30% {
-		transform: scale(100%);
-	}
-
-	100% {
-		transform: scale(90%);
-	}
-}
-
-section {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 400px;
-	padding: 30px 20vw;
-	transform: scale(90%);
-	transition: 500ms;
-	animation: 1s ease-out 0s 1 to90perc;
-}
-
-section:hover {
-	transition: 500ms;
-	transform: scale(95%);
 }
 
 .color-1 {
@@ -70,4 +35,12 @@ section:hover {
 
 a:visited {
 	text-decoration: none;
+}
+
+li {
+	list-style-type: square;
+}
+
+li li {
+	list-style-type: square;
 }

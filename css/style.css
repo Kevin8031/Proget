@@ -1,11 +1,11 @@
 body {
-	background-color: #bbbfbc;
+	background-color: #3d4245;
 	text-align: center;
 	align-items: center;
 	font-family: 'Roboto', sans-serif;
-	/* background-image: linear-gradient(to left, white, white 50%, black, black50%); */
-	/* background-color: #181a1b; */
-	/* color: antiquewhite; */
+	color: #e8e6e3;
+	margin: 0px;
+	position: relative;
 }
 
 .kubuntu {
@@ -74,13 +74,15 @@ body {
 .card-body-cyber {
 	width: 480px;
 	text-align: left;
-	background-color: lightblue;
+	background-color: #1b4958;
+	/* #1b4958 */
 }
 
 .card-body-linux {
 	width: 480px;
 	text-align: left;
-	background-color: rgb(237, 253, 89);
+	background-color: #687001;
+	/* rgb(237, 253, 89) */
 }
 
 #card-title {
@@ -109,13 +111,4 @@ body {
 
 #card-text {
 	text-align: left;
-}
-
-.footer {
-	height: 100px;
-	font-size: 30px;
-	background-color: #343536;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }

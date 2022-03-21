@@ -1,3 +1,48 @@
 body {
-    background-color: #232627;
+	color: white;
+	background: url("../res/htop.png");
+	background-size: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 0;
 }
+
+.color-1 {
+	background: #00BF00;
+}
+
+.color-2 {
+	background: #008C00;
+}
+
+.color-3 {
+	background: #134013;
+}
+
+.color-4 {
+	background: #3DCA3D;
+}
+
+.color-5 {
+	background: #000000;
+}
+
+/* .color-1 {
+	background: #FFA500;
+}
+
+.color-2 {
+	background: #F7BA4A;
+}
+
+.color-3 {
+	background: #F59F00;
+}
+
+.color-4 {
+	background: #755923;
+}
+
+.color-5 {
+	background: #C27E00;
+} */

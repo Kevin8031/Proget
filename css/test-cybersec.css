@@ -3,12 +3,12 @@ body {
     text-align: center;
 }
 
-.div-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-input[type = radio] {
-    
+.quest-label {
+    background-color: #E7E9EB;
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
 }

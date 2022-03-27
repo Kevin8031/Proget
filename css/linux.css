@@ -1,12 +1,12 @@
 /* === BODY === */
 
 body {
-	color: white;
-	background: url("../res/htop.png");
-	background-size: 100%;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	margin: 0;
+    color: white;
+    background: url("../res/htop.png");
+    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
 }
 
 /* ==================== */
@@ -14,23 +14,23 @@ body {
 /* === SECTIONS === */
 
 .color-1 {
-	background: #00BF00;
+    background: #00BF00;
 }
 
 .color-2 {
-	background: #008C00;
+    background: #008C00;
 }
 
 .color-3 {
-	background: #134013;
+    background: #134013;
 }
 
 .color-4 {
-	background: #3DCA3D;
+    background: #3DCA3D;
 }
 
 .color-5 {
-	background: #000000;
+    background: #000000;
 }
 
 /* ==================== */
@@ -38,47 +38,47 @@ body {
 /* === FOOTER === */
 
 .footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 5px;
-	column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    column-gap: 20px;
 }
 
 p {
-	color: white;
-	text-align: center;
-	transition: 300ms;
+    color: white;
+    text-align: center;
+    transition: 300ms;
 }
 
 #img-test {
-	width: 75px;
-	height: 75px;
-	transition: .7s;
+    width: 75px;
+    height: 75px;
+    transition: .7s;
 }
 
 #img-test:hover {
-	transform: scale(115%);
+    transform: scale(115%);
 }
 
 /* ==================== */
 
 /* .color-1 {
-	background: #FFA500;
+    background: #FFA500;
 }
 
 .color-2 {
-	background: #F7BA4A;
+    background: #F7BA4A;
 }
 
 .color-3 {
-	background: #F59F00;
+    background: #F59F00;
 }
 
 .color-4 {
-	background: #755923;
+    background: #755923;
 }
 
 .color-5 {
-	background: #C27E00;
+    background: #C27E00;
 } */

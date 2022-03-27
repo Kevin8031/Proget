@@ -1,12 +1,12 @@
 /* === BODY ===*/
 
 body {
-	color: white;
-	background-image: url(../res/cybersecSfondo.jpg);
-	background-size: 100%;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	margin: 0;
+    color: white;
+    background-image: url(../res/cybersecSfondo.jpg);
+    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
 }
 
 /* ==================== */
@@ -14,23 +14,23 @@ body {
 /* === SECTIONS === */
 
 .color-1 {
-	background: #07B3B3;
+    background: #07B3B3;
 }
 
 .color-2 {
-	background: #216161;
+    background: #216161;
 }
 
 .color-3 {
-	background: #034747;
+    background: #034747;
 }
 
 .color-4 {
-	background: #329494;
+    background: #329494;
 }
 
 .color-5 {
-	background: #09E0E0;
+    background: #09E0E0;
 }
 
 /* ==================== */
@@ -38,7 +38,7 @@ body {
 /* === ANCHOR === */
 
 a:visited {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 /* ==================== */
@@ -46,11 +46,11 @@ a:visited {
 /* === LIST ELEMENT === */
 
 li {
-	list-style-type: square;
+    list-style-type: square;
 }
 
 li li {
-	list-style-type: square;
+    list-style-type: square;
 }
 
 /* ==================== */
@@ -58,27 +58,27 @@ li li {
 /* === FOOTER === */
 
 .footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 5px;
-	column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    column-gap: 20px;
 }
 
 p {
-	color: white;
-	text-align: center;
-	transition: 300ms;
+    color: white;
+    text-align: center;
+    transition: 300ms;
 }
 
 #img-test {
-	width: 75px;
-	height: 75px;
-	transition: .7s;
+    width: 75px;
+    height: 75px;
+    transition: .7s;
 }
 
 #img-test:hover {
-	transform: scale(115%);
+    transform: scale(115%);
 }
 
 /* ==================== */

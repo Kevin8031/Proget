@@ -1,12 +1,12 @@
 /* === FOOTER === */
 
 footer {
-	height: 100px;
-	font-size: 30px;
-	background-color: #343536;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    height: 100px;
+    font-size: 30px;
+    background-color: #343536;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ==================== */
@@ -14,8 +14,8 @@ footer {
 /* === H1 === */
 
 h1 {
-	font-weight: bold;
-	font-size: 50px;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 /* ==================== */
@@ -23,38 +23,38 @@ h1 {
 /* === SECTIONS ===*/
 
 section {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 400px;
-	padding: 30px 20vw;
-	transform: scale(90%);
-	transition: 500ms;
-	animation: 1s ease 0s 1 to90perc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 30px 20vw;
+    transform: scale(90%);
+    transition: 500ms;
+    animation: 1s ease 0s 1 to90perc;
 
-	-webkit-transform: scale(90%);
-	-webkit-transition: 500ms;
-	-webkit-animation: 1s ease 0s 1 to90perc;
+    -webkit-transform: scale(90%);
+    -webkit-transition: 500ms;
+    -webkit-animation: 1s ease 0s 1 to90perc;
 }
 
 section:hover {
-	transition: 500ms;
-	transform: scale(95%);
+    transition: 500ms;
+    transform: scale(95%);
 }
 
 @keyframes to90perc {
-	0% {
-		transform: scale(100%);
-	}
+    0% {
+        transform: scale(100%);
+    }
 
-	30% {
-		transform: scale(100%);
-	}
+    30% {
+        transform: scale(100%);
+    }
 
-	100% {
-		transform: scale(90%);
-	}
+    100% {
+        transform: scale(90%);
+    }
 }
 
 /* ==================== */

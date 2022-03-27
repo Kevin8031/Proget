@@ -1,3 +1,4 @@
+/* === BODY === */
 body {
 	background-color: #3d4245;
 	text-align: center;
@@ -8,30 +9,29 @@ body {
 	position: relative;
 }
 
-.kubuntu {
+/* ==================== */
+
+/* === HEADER === */
+
+header {
+	height: 100px;
+	background-color: #343536;
+	font-size: 30px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
 	width: 64px;
 	height: 64px;
 	margin: 0px 25px;
 }
 
-.header {
-	height: 100px;
-	background-color: #343536;
-	font-size: 30px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
+/* -------------------- */
 
-.sugiù {
-	color: white;
-}
-
-.invisible-link {
-	text-decoration: none;
-	color: inherit;
-}
+/* === H1 & PARAGRAPH ON TOP ===*/
 
 .h1Txt {
 	font-size: 50px;
@@ -40,6 +40,10 @@ body {
 .pTxt {
 	font-size: 25px;
 }
+
+/* -------------------- */
+
+/* === CARDS ===*/
 
 .cards-container {
 	display: flex;
@@ -71,6 +75,29 @@ body {
 	transform: scale(110%);
 }
 
+/* .invisible-link {
+	text-decoration: none;   INUTILIZZATO
+	color: inherit;
+} */
+
+.img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#cybersecImg {
+	text-align: left;
+}
+
+#tuxImg {
+	box-shadow: inset 4px 3px 8px 1px #000;
+	text-align: left;
+}
+
+.card-body-txt {
+	margin-top: -4px;
+}
+
 .card-body-cyber {
 	width: 480px;
 	text-align: left;
@@ -95,20 +122,12 @@ body {
 	margin-left: 10px;
 }
 
-.img {
-	max-width: 100%;
-	max-height: 110%;
+/* -------------------- */
+
+/* === FOOTER === */
+
+.sugiù {
+	color: white;
 }
 
-#cybersecImg {
-	text-align: left;
-}
-
-#tuxImg {
-	box-shadow: inset 4px 3px 8px 1px #000;
-	text-align: left;
-}
-
-#card-text {
-	text-align: left;
-}
+/* -------------------- */

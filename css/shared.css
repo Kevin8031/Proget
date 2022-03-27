@@ -1,3 +1,5 @@
+/* === FOOTER === */
+
 footer {
 	height: 100px;
 	font-size: 30px;
@@ -7,10 +9,18 @@ footer {
 	justify-content: center;
 }
 
+/* ==================== */
+
+/* === H1 === */
+
 h1 {
 	font-weight: bold;
 	font-size: 50px;
 }
+
+/* ==================== */
+
+/* === SECTIONS ===*/
 
 section {
 	position: relative;
@@ -42,3 +52,5 @@ section:hover {
 		transform: scale(90%);
 	}
 }
+
+/* ==================== */

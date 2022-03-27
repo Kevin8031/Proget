@@ -1,11 +1,17 @@
+/* === BODY ===*/
+
 body {
 	color: white;
-	background-image: url(https://constructionexec.com/assets/site_18/images/article/102120123537.jpg?width=1280);
+	background-image: url(../res/cybersecSfondo.jpg);
 	background-size: 100%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	margin: 0;
 }
+
+/* ==================== */
+
+/* === SECTIONS === */
 
 .color-1 {
 	background: #07B3B3;
@@ -27,15 +33,17 @@ body {
 	background: #09E0E0;
 }
 
-.menu {
-	background-color: white;
-	fill: white;
-	color: black;
-}
+/* ==================== */
+
+/* === ANCHOR === */
 
 a:visited {
 	text-decoration: none;
 }
+
+/* ==================== */
+
+/* === LIST ELEMENT === */
 
 li {
 	list-style-type: square;
@@ -44,3 +52,33 @@ li {
 li li {
 	list-style-type: square;
 }
+
+/* ==================== */
+
+/* === FOOTER === */
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+	column-gap: 20px;
+}
+
+p {
+	color: white;
+	text-align: center;
+	transition: 300ms;
+}
+
+#img-test {
+	width: 75px;
+	height: 75px;
+	transition: .7s;
+}
+
+#img-test:hover {
+	transform: scale(115%);
+}
+
+/* ==================== */

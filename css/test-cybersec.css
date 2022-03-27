@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.div-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type = radio] {
+    
+}

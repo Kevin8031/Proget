@@ -32,6 +32,10 @@ section {
 	transform: scale(90%);
 	transition: 500ms;
 	animation: 1s ease 0s 1 to90perc;
+
+	-webkit-transform: scale(90%);
+	-webkit-transition: 500ms;
+	-webkit-animation: 1s ease 0s 1 to90perc;
 }
 
 section:hover {

@@ -1,12 +1,12 @@
 /* === BODY === */
 body {
-	background-color: #3d4245;
-	text-align: center;
-	align-items: center;
-	font-family: 'Roboto', sans-serif;
-	color: #e8e6e3;
-	margin: 0px;
-	position: relative;
+    background-color: #3d4245;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #e8e6e3;
+    margin: 0px;
+    position: relative;
 }
 
 /* ==================== */
@@ -14,20 +14,20 @@ body {
 /* === HEADER === */
 
 header {
-	width: inherit;
-	height: 100px;
-	background-color: #343536;
-	font-size: 30px;
-	display: flex;
-	text-align: center;
-	align-items: center;
-	justify-content: space-between;
+    width: inherit;
+    height: 100px;
+    background-color: #343536;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-	width: 64px;
-	height: 64px;
-	margin: 0px 25px;
+    width: 64px;
+    height: 64px;
+    margin: 0px 25px;
 }
 
 /* -------------------- */
@@ -35,103 +35,104 @@ header {
 /* === H1 & PARAGRAPH ON TOP ===*/
 
 .h1Txt {
-	font-size: 50px;
+    font-size: 50px;
 }
 
 .pTxt {
-	font-size: 25px;
+    font-size: 25px;
 }
 
 /* -------------------- */
 
 /* === CARDS ===*/
 @media (max-width: 1000px) {
-	.cards-container {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
-		margin-top: 15vw;
-		margin-bottom: 15vw;
-		height: 100%;
-	}
+    .cards-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15vw;
+        margin-bottom: 15vw;
+        height: 100%;
+    }
 }
 
 
 .cards-container {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: center;
-	margin-top: 50px;
-	height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100%;
 }
 
 .card-div {
-	width: 480px;
-	height: 500px;
-	margin-left: 150px;
-	margin-right: 150px;
+    width: 480px;
+    height: 500px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .card {
-	display: flex;
-	flex: 1 0 0%;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
-	background-clip: border-box;
-	transform: scale(100%);
-	transition: 300ms;
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-clip: border-box;
+    transform: scale(100%);
+    transition: 300ms;
 }
 
 .card:hover {
-	transition: 300ms;
-	box-shadow: 5px 7px 10px 2px rgb(177, 177, 177);
-	transform: scale(110%);
+    transition: 300ms;
+    box-shadow: 5px 7px 10px 2px rgb(177, 177, 177);
+    transform: scale(110%);
+    cursor: pointer;
 }
 
 .img {
-	max-width: 100%;
-	max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #cybersecImg {
-	text-align: left;
+    text-align: left;
 }
 
 #tuxImg {
-	box-shadow: inset 4px 3px 8px 1px #000;
-	text-align: left;
+    box-shadow: inset 4px 3px 8px 1px #000;
+    text-align: left;
 }
 
 .card-body-txt {
-	min-width: 300px;
-	margin-top: -4px;
+    min-width: 300px;
+    margin-top: -4px;
 }
 
 .card-body-cyber {
-	width: 480px;
-	text-align: left;
-	background-color: #1b4958;
-	/* #1b4958 */
+    width: 480px;
+    text-align: left;
+    background-color: #1b4958;
+    /* #1b4958 */
 }
 
 .card-body-linux {
-	width: 480px;
-	text-align: left;
-	background-color: #687001;
-	/* rgb(237, 253, 89) */
+    width: 480px;
+    text-align: left;
+    background-color: #687001;
+    /* rgb(237, 253, 89) */
 }
 
 #card-title {
-	font-size: 30px;
-	margin-left: 10px;
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 #card-txtBody {	
-	font-size: 20px;
-	margin-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 /* -------------------- */
@@ -139,8 +140,8 @@ header {
 /* === FOOTER === */
 
 footer {
-	width: 100%;
-	color: white;
+    width: 100%;
+    color: white;
 }
 
 /* -------------------- */

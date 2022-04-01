@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.quest-label {
+    background-color: #E7E9EB;
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}

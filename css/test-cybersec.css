@@ -3,12 +3,25 @@ body {
     text-align: center;
 }
 
+.div-input {
+    width: 50%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form {
+    border: 1px solid black;
+}
+
 .quest-label {
+    height: 25px;
     background-color: #E7E9EB;
     display: block;
     position: relative;
-    padding: 10px 10px 10px 50px;
-    margin-bottom: 1px;
+    text-align: start;
+    padding: 15px 10px;
+    margin-bottom: -18px;
     cursor: pointer;
     font-size: 18px;
 }

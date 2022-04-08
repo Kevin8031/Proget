@@ -57,21 +57,19 @@ header {
     }
 }
 
-
 .cards-container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0px;
     height: 100%;
 }
 
 .card-div {
     width: 480px;
     height: 500px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 20px 150px;
 }
 
 .card {
@@ -137,8 +135,31 @@ header {
 
 /* -------------------- */
 
-/* === FOOTER === */
+/* === COOKIES === */
 
+
+/* === FOOTER === */
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cookie {
+    position: fixed;
+    opacity: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding-bottom: 15px;
+    animation: 2s ease 500ms 1 fadeInAnim forwards;
+}
+
+/* -------------------- */
 footer {
     width: 100%;
     color: white;

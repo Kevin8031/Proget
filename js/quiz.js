@@ -6,34 +6,72 @@ body.appendChild(container);
 
 var counter = 0;
 class domanda {
-    id
+    num
     testo
-    correctAnswer
+    rispostaCorretta
     risposte
-    section
-    buttons
     isMultipla
+
+    constructor(num, testo, risposte, isMultipla, rispostaCorretta) {
+        this.num = num;
+        this.testo = testo;
+        this.risposte = risposte;
+        this.isMultipla = isMultipla;
+        this.rispostaCorretta = rispostaCorretta;
+    }
+}
+
+class quiz {
+    id
+    titolo
+    domande
+}
+
+class Quiz {
+    quiz
     label
+    buttons
+    section
+
+    constructor(quiz) {
+        this.quiz = quiz;
+        this.section = [];
+    }
 }
 
 var list = null;
+var ActualQuiz = null;
 const file = fetch("js/domandeCyberSec.json")
     .then(response => response.json())
     .then(data => 
 {
     list = data;
+    ActualQuiz = new Quiz(list);
+    document.title = "Quiz - " + ActualQuiz.quiz.titolo;
+    var index = [];
+    while(index.length < list.domande.length) {
+        let n = Math.floor(Math.random() * list.domande.length);
+        let bool = true;
 
-    for (let i = 0; i < list.length; i++) {
+        index.forEach((item) => {
+            if(n == item)
+                bool = false;
+        })
+
+        if(bool)
+            index.push(n);
+    }
+
+    for (let i = 0; i < index.length; i++) {
         let section = document.createElement("section");
         section.className = "question-sec";
-        section.id = "section-" + (i+1);
-        list[i].section = section;
+        section.id = "section-" + (index[i]+1);
         
         let domandaText = document.createElement("h1");
-        let text = list[i].id + ". " + list[i].testo;
+        let text = i+1 + ". " + list.domande[index[i]].testo;
 
-        if(list[i].isMultipla)
-            text += " (Scegli " + list[i].correctAnswer.length + " risposte)";
+        if(list.domande[index[i]].isMultipla)
+            text += " (Scegli " + list.domande[index[i]].rispostaCorretta.length + " risposte)";
 
         domandaText.innerText = text;
         
@@ -47,29 +85,32 @@ const file = fetch("js/domandeCyberSec.json")
         section.appendChild(innerDiv);
         innerDiv.appendChild(form);
         container.appendChild(section);
+        ActualQuiz.section.push([section]);
         
-        list[i].risposte.forEach((item) => {
+        list.domande[index[i]].risposte.forEach((item) => {
             let label = document.createElement("label");
-            label.htmlFor = "answer-" + counter;
+            label.htmlFor = "field-" + counter;
             label.className = "quest-label";
             label.innerText = item;
-            list[i].label.push(label);
+            ActualQuiz.section[i];
+
+            section.getElementsByTagName
             
             let input = document.createElement("input");
             let type = "radio"
-            if(list[i].isMultipla)
-            type = "checkbox"
+            if(list.domande[index[i]].isMultipla)
+                type = "checkbox"
             
             input.type = type;
-            input.name = "quest-" + i;
-            input.id = "answer-" + counter;
-            list[i].buttons.push(input);
-            // input.onclick = buttonClicked.bind(input, list[i], input);
+            input.name = "quest-" + (index[i] + 1);
+            input.id = "field-" + counter;
+            input.onclick = function() { console.log("id: " + input.name); };
+            ActualQuiz.section[i].push(input);
             counter++;
             
             label.appendChild(input);
             form.appendChild(label);
-            form.appendChild(document.createElement("br"));
+            // form.appendChild(document.createElement("br"));
         });
     }
     
@@ -86,29 +127,33 @@ const file = fetch("js/domandeCyberSec.json")
 function conferma() {
     console.log("controllo il test");
     let nonRisposte = [];
-    list.forEach((item) => {
-        // item.buttons.forEach((btn) => {
-        //     console.log(btn + " | " + btn.getAttribute("flag") + " | " + btn.checked);
-        // }
-        item.section.style.background = "white";
+
+    for (let i = 0; i < ActualQuiz.section.length; i++) {
+        const section = ActualQuiz.section[i];
+
+        section[0].getElementsByTagName("h1")[0].style.background = "white";
+
         let bool = false;
-        item.buttons.forEach((btn) => {
+        for (let j = 1; j < section.length; j++) {
+            const btn = section[j];
             if(btn.checked)
                 bool = true;
-        });
+        }
+
         if(!bool)
-            nonRisposte.push(item);
-    });
+            nonRisposte.push(section);
+    }
 
     if (nonRisposte.length > 0) {
         window.alert("Non hai risposto a tutte le domande");
 
-        nonRisposte[0].section.scrollIntoView({
+
+        nonRisposte[0][0].scrollIntoView({
             behavior: "smooth"
         });
 
         nonRisposte.forEach((item) => {
-            item.section.style.background = "yellow";
+            item[0].getElementsByTagName("h1")[0].style.background = "yellow";
 
             // setInterval(function() {item.section.style.background = "white";}, 1000);
         });
@@ -120,15 +165,15 @@ function conferma() {
 function correggiTest() {
     let giuste = [];
     let sbagliate = [];
-    for (let i = 0; i < list.length; i++) {
-        const item = list[i];
-        if(item.correctAnswer.length == 1) {
-            if(item.buttons[item.correctAnswer[0] - 1])
-                giuste.push(item.label[item.correctAnswer[0] - 1]);
+    for (let i = 0; i < list.domande.length; i++) {
+        const item = list.domande[i];
+        if(item.rispostaCorretta.length == 1) {
+            if(item.buttons[item.rispostaCorretta[0] - 1])
+                giuste.push(item.label[item.rispostaCorretta[0] - 1]);
             else
-                sbagliate.push(item.label[item.correctAnswer[0] - 1]);
+                sbagliate.push(item.label[item.rispostaCorretta[0] - 1]);
         } else {
-            for (let j = 0; j < item.correctAnswer.length; j++) {
+            for (let j = 0; j < item.rispostaCorretta.length; j++) {
                 const element = array[j];
                 
             }

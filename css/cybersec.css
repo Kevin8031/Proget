@@ -14,23 +14,23 @@ body {
 /* === SECTIONS === */
 
 .color-1 {
-    background: #07B3B3;
+    background-color: rgba(7, 179, 179, 0.8);
 }
 
 .color-2 {
-    background: #216161;
+    background-color: rgba(33, 97, 97, 0.8);
 }
 
 .color-3 {
-    background: #034747;
+    background-color: rgba(3, 71, 71, 0.8);
 }
 
 .color-4 {
-    background: #329494;
+    background-color: rgba(50, 148, 148, 0.8);
 }
 
 .color-5 {
-    background: #09E0E0;
+    background-color: rgba(9, 224, 224, 0.8);
 }
 
 /* ==================== */

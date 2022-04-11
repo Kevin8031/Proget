@@ -41,32 +41,36 @@ section {
     align-items: center;
     min-height: 400px;
     padding: 30px 20vw;
+    font-weight: 400;
+
     transform: scale(90%);
     transition: 500ms;
-    animation: 1s ease 0s 1 to90perc;
-
     -webkit-transform: scale(90%);
     -webkit-transition: 500ms;
-    -webkit-animation: 1s ease 0s 1 to90perc;
 }
 
 section:hover {
-    transition: 500ms;
     transform: scale(95%);
+    text-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    transition: 500ms;
 }
 
-@keyframes to90perc {
-    0% {
-        transform: scale(100%);
-    }
+p {
+    font-size: 26px;
+}
 
-    30% {
-        transform: scale(100%);
-    }
+/* ==================== */
 
-    100% {
-        transform: scale(90%);
-    }
+/* === LIST ELEMENT === */
+
+li {
+    font-size: 26px;
+    list-style-type: square;
+}
+
+li li {
+    font-size: 26px;
+    list-style-type: square;
 }
 
 /* ==================== */

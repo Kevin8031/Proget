@@ -2,7 +2,7 @@
 
 body {
     color: white;
-    background: url("../res/htop.png");
+    background-image: url(https://imgs.search.brave.com/U4lhPwxMUF5qVfYPIie933OBdVpIK5C8YQYFsnqUAMM/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93d3cu/dGVjaG5vY3JhemVk/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAxNS8xMi9MaW51/eC1XYWxscGFwZXIt/MjYuanBn);
     background-size: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;

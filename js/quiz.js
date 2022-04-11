@@ -2,7 +2,31 @@ var container = document.createElement("div");
 container.className = "div-text";
 
 var body = document.body;
+
+var arrow = document.createElement("div");
+arrow.style.width = "100%";
+arrow.style.position = "sticky";
+arrow.style.float = "left";
+
+var anchor = document.createElement("a");
+anchor.style.position = "sticky";
+anchor.href = "index.html";
+
+var image = document.createElement("img");
+image.src = "res/nav/arrow_back_black_24dp.svg";
+image.style.height = "35px";
+
+anchor.appendChild(image);
+arrow.appendChild(anchor);
+
+body.appendChild(arrow);
 body.appendChild(container);
+
+/* <div style="top: 0;  position: sticky;">
+    <a href="index.html" style="position: sticky;">
+        <img src="res/nav/arrow_back_white_24dp.svg" style="height: 35px;">
+    </a>
+</div> */
 
 class domanda {
     num
@@ -40,8 +64,23 @@ class Quiz {
 
 var list = null;
 var ActualQuiz = null;
-const file = fetch("js/domandeCyberSec.json")
-    .then(response => response.json())
+
+var file = null;
+switch (window.location.search) {
+    case "?cybersec":
+        file = fetch("js/domandeCyberSec.json");
+        break;
+
+    case "?linux":
+        file = fetch("js/domandeLinux.json");
+        break;
+
+    default:
+        alert("Nessun test è stato caricato\nAssicurati di essere arrivato su questa pagina da uno dei due corsi");
+        break;
+}
+
+file.then(response => response.json())
     .then(data => 
 {
     list = data;
@@ -199,43 +238,23 @@ function correggiTest() {
         const section = document.getElementById(ActualQuiz.section[i][0].id);
         if(domanda.rispostaCorretta.length == 1) {
             if(buttons[domanda.rispostaCorretta[0] - 1].checked)
-                giuste.push([section, [buttons[domanda.rispostaCorretta[0] - 1].id, "green"]]);
+                giuste.push([section, [buttons[domanda.rispostaCorretta[0] - 1].id, "#92EDA5"]]);
             else
-                sbagliate.push([section, [buttons[domanda.rispostaCorretta[0] - 1].id, "green"]]);
+                sbagliate.push([section, [buttons[domanda.rispostaCorretta[0] - 1].id, "#92EDA5"]]);
         } else {
-            // let n = 0;
-            // let corrette = 0;
-            // buttons.forEach((btn) => {
-            //     if(btn.checked)
-            //         n++;
-            // });
-
-            // for (let j = 0; j < domanda.rispostaCorretta.length; j++) {
-            //     if(buttons[domanda.rispostaCorretta[j] - 1].checked) {
-            //         giuste.push([section, [buttons[domanda.rispostaCorretta[j] - 1].id, "green"]]);
-            //         corrette++;
-            //     }
-            //     else
-            //         sbagliate.push([section, [buttons[domanda.rispostaCorretta[j] - 1].id, "green"]]);
-            // }
-
-            // if(n > corrette) {
-            //     for (let j = domanda.rispostaCorretta[domanda.rispostaCorretta.length - 1]; j < buttons.length; j++) {
-            //         const btn = buttons[j];
-            //         if(btn.checked)
-            //             sbagliate.push([section, [btn.id, "red"]]);
-            //     }
-            // }
-
             for (let j = 0; j < buttons.length; j++) {
                 const btn = buttons[j];
-                domanda.rispostaCorretta.forEach((n) => {
-                    if(btn.checked)
+                if(btn.checked) {
+                    let giusta = false;
+                    domanda.rispostaCorretta.forEach((n) => {
                         if(n - 1 == j)
-                            giuste.push([section, [buttons[domanda.rispostaCorretta[j] - 1].id, "green"]]);
-                        else
-                            sbagliate.push([section, [buttons[domanda.rispostaCorretta[j] - 1].id, "yellow"]]);
-                });
+                            giusta = true;
+                    });
+                    if (giusta)
+                        giuste.push([section, [btn.id, "#92EDA5"]]);
+                    else
+                        sbagliate.push([section, [btn.id, "yellow"]]);
+                }
             }
         }
     }
@@ -249,7 +268,7 @@ function visualizzaCorrezione(giuste, sbagliate) {
     });
 
     giuste.forEach((item) => {
-        item[0].querySelector("h1").style.background = "green";
+        item[0].querySelector("h1").style.background = "#92EDA5";
         for (let i = 1; i < item.length; i++) {
             const element = item[i];
             document.getElementById("label-" + element[0]).style.background = element[1];
@@ -257,7 +276,7 @@ function visualizzaCorrezione(giuste, sbagliate) {
     })
     
     sbagliate.forEach((item) => {
-        item[0].querySelector("h1").style.background = "red";
+        item[0].querySelector("h1").style.background = "#ED2000";
         for (let i = 1; i < item.length; i++) {
             const element = item[i];
             document.getElementById("label-" + element[0]).style.background = element[1];

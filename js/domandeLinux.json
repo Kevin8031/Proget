@@ -1,0 +1,98 @@
+{
+    "id": 1,
+    "titolo": "Linux",
+    "domande": [
+        {
+            "num": 1,
+            "testo": "Cos'è Linux",
+            "rispostaCorretta": [
+                2
+            ],
+            "risposte": [
+                "Un sistema operativo nato negli anni '80 per competere a quello di UNIX",
+                "Un kernel open-source",
+                "Un semi sistema operativo senza Desktop Environment"
+            ],
+            "isMultipla": false
+        },
+        {
+            "num": 2,
+            "testo": "Chi creo Linux",
+            "rispostaCorretta": [
+                1
+            ],
+            "risposte": [
+                "Linus Torvalds",
+                "Richard Stallman",
+                "Linux Torvalds"
+            ],
+            "isMultipla": false
+        },
+        {
+            "num": 3,
+            "testo": "Cosa mancava al Progetto GNU per esser completato",
+            "rispostaCorretta": [
+                3
+            ],
+            "risposte": [
+                "Un Desktop Environment",
+                "Un prompt comandi",
+                "Un Kernel"
+            ],
+            "isMultipla": false
+        },
+        {
+            "num": 4,
+            "testo": "Cos'è un Desktop Environment",
+            "rispostaCorretta": [
+                2
+            ],
+            "risposte": [
+                "Un sistema di GUI e CLI",
+                "L'insieme di GUI di sistema",
+                "Un desktop user-friendly"
+            ],
+            "isMultipla": false
+        },
+        {
+            "num": 5,
+            "testo": "Quali tra queste *non* è una distro",
+            "rispostaCorretta": [
+                2
+            ],
+            "risposte": [
+                "Ubuntu",
+                "KDE",
+                "Arch",
+                "Kali"
+            ],
+            "isMultipla": false
+        },
+        {
+            "num": 6,
+            "testo": "Quali vantaggi ha Linux",
+            "rispostaCorretta": [
+                1
+            ],
+            "risposte": [
+                "É veloce, sicuro, open-source",
+                "É veloce, sicuro, ma a pagamento",
+                "É open-source ma, per questo, poco sicuro"
+            ],
+            "isMultipla": false
+        },
+        {
+            "num": 7,
+            "testo": "Perchè non è molto diffuso come PC o Desktop",
+            "rispostaCorretta": [
+                3
+            ],
+            "risposte": [
+                "Non è installabile sui computer preassemblati",
+                "Non è adatto ai programmatori",
+                "Non è user-friendly"
+            ],
+            "isMultipla": false
+        }
+    ]
+}

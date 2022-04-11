@@ -79,6 +79,66 @@ var domandeLinux = [
     "Perchè non è molto diffuso come PC o Desktop"
 ]
 
+/* Struttura 
+    domanda 1
+    domanda n
+    risposte corrette [e.g. 1,3]
+    risposta multipla (true,false)
+*/
+var risposteLinux = [
+    [
+        "Un sistema operativo nato negli anni '80 per competere a quello di UNIX",
+        "Un kernel open-source",
+        "Un semi sistema operativo senza Desktop Environment",
+        [2],
+        false
+    ],
+    [
+        "Linus Torvalds",
+        "Richard Stallman",
+        "Linux Torvalds",
+        [1],
+        false
+    ],
+    [
+        "Un Desktop Environment",
+        "Un prompt comandi",
+        "Un Kernel",
+        [3],
+        false
+    ],
+    [
+        "Un sistema di GUI e CLI",
+        "L'insieme di GUI di sistema",
+        "Un desktop user-friendly",
+        [2],
+        false
+    ],
+    [
+        "Ubuntu",
+        "KDE",
+        "Arch",
+        "Android",
+        "Kali",
+        [2],
+        false
+    ],
+    [
+        "É veloce, sicuro, open-source",
+        "É veloce, sicuro, ma a pagamento",
+        "É open-source ma, per questo, poco sicuro",
+        [1],
+        false
+    ],
+    [
+        "Non è installabile sui computer preassemblati",
+        "Non è adatto ai programmatori",
+        "Non è user-friendly",
+        [3],
+        false
+    ],
+]
+
 /*
     Domande corso Cybersecurity
 
@@ -117,11 +177,12 @@ var domandeLinux = [
 
 /*
     Domande corso Linux
+    // 2, 1, 3, 2, 2, 1, 3 
 
     Cos'è Linux?
         - Un sistema operativo nato negli anni '80 per competere a quello di UNIX
         - Un kernel open-source
-        - Un semi sistema operativo senza Desktop Environment
+        - Un sistema operativo senza Desktop Environment
     Chi creo Linux?
         - Linus Torvalds
         - Richard Stallman
@@ -141,13 +202,13 @@ var domandeLinux = [
         - Android
         - Kali
     Quali vantaggi ha Linux?
-        - É veloce, sicuro, ma a pagamento
         - É veloce, sicuro, open-source
+        - É veloce, sicuro, ma a pagamento
         - É open-source ma, per questo, poco sicuro
     Perchè non viene commercializzato nei computer desktop?
         - Non è installabile sui computer prefabbricati
-        - Non è user-friendly
         - Non è adatto ai programmatori
+        - Non è user-friendly
 */
 class domanda {
     num
@@ -172,14 +233,14 @@ class quiz {
 }
 
 var list = new quiz();
-list.id = 0;
-list.titolo = "CyberSecurity";
+list.id = 1;
+list.titolo = "Linux";
 list.domande = [];
-for (let i = 0; i < domandeCyberSec.length; i++) {
-    list.domande.push(new domanda((i + 1), domandeCyberSec[i], risposteCyberSec[i], risposteCyberSec[i].pop(), risposteCyberSec[i].pop()));
+for (let i = 0; i < domandeLinux.length; i++) {
+    list.domande.push(new domanda((i + 1), domandeLinux[i], risposteLinux[i], risposteLinux[i].pop(), risposteLinux[i].pop()));
 }
 var file = require("fs");
 
-file.writeFileSync("domandeCyberSec.json", JSON.stringify(list));
+file.writeFileSync("domandeLinux.json", JSON.stringify(list));
 
-const read = file.readFileSync("domandeCyberSec.json", "utf-8");
+// const read = file.readFileSync("domandeCyberSec.json", "utf-8");

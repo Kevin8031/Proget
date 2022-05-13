@@ -6,7 +6,8 @@ var body = document.body;
 var arrow = document.createElement("div");
 arrow.style.width = "100%";
 arrow.style.position = "sticky";
-arrow.style.float = "left";
+arrow.style.display = "flex";
+arrow.style.alignItems = "left";
 
 var anchor = document.createElement("a");
 anchor.style.position = "sticky";
@@ -21,12 +22,6 @@ arrow.appendChild(anchor);
 
 body.appendChild(arrow);
 body.appendChild(container);
-
-/* <div style="top: 0;  position: sticky;">
-    <a href="index.html" style="position: sticky;">
-        <img src="res/nav/arrow_back_white_24dp.svg" style="height: 35px;">
-    </a>
-</div> */
 
 class domanda {
     num
